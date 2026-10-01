@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Katalog Sepatu Wanita | Teal &amp; Grey Collection</title>
+<meta name="description" content="Katalog sepatu wanita responsif — flatshoes, sneakers, boots, heels, sandals.">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+<header class="bg-teal-700 text-white sticky top-0 z-50 shadow-md">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <a href="#home" class="font-bold tracking-wide heading-brand">
+        Shoes<span class="text-teal-200">.co</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8">
+        <a href="#home" class="nav-link">Beranda</a>
+        <a href="#katalog" class="nav-link">Katalog</a>
+        <a href="#tentang" class="nav-link">Tentang</a>
+        <a href="#kontak" class="nav-link">Kontak</a>
+      </nav>
+      <button id="menu-toggle" class="md:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5" aria-label="Buka menu">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+    </div>
+  </div>
+  <nav id="mobile-menu" class="md:hidden hidden flex-col bg-teal-800 px-4 pb-4">
+    <a href="#home" class="nav-link-mobile">Beranda</a>
+    <a href="#katalog" class="nav-link-mobile">Katalog</a>
+    <a href="#tentang" class="nav-link-mobile">Tentang</a>
+    <a href="#kontak" class="nav-link-mobile">Kontak</a>
+  </nav>
+</header>
+
+<section id="home" class="bg-gradient-to-r from-teal-600 to-teal-800 text-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 text-center">
+    <h1 class="heading-hero font-bold mb-3">L'Arcel</h1>
+    <p class="body-responsive text-teal-100 max-w-xl mx-auto">
+      Where Comfort Meets the Statement.
+    </p>
+  </div>
+</section>
+
+<main id="katalog" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
+  <h2 class="heading-section font-bold text-teal-700 mb-6 text-center">Katalog Produk</h2>
+
+  <div id="category-row" class="flex flex-wrap justify-center gap-2 mb-4">
+    <button class="cat-btn active" data-cat="semua">All Item</button>
+    <button class="cat-btn" data-cat="flatshoes">Flatshoes</button>
+    <button class="cat-btn" data-cat="sneakers">Sneakers</button>
+    <button class="cat-btn" data-cat="boots">Boots</button>
+    <button class="cat-btn" data-cat="heels">Heels</button>
+    <button class="cat-btn" data-cat="sandals">Sandals</button>
+  </div>
+
+  <div id="model-row" class="flex flex-wrap justify-center gap-2 mb-10 min-h-[2rem]"></div>
+
+  <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+
+    <article class="product-card" data-category="flatshoes" data-model="Ballet Flats">
+      <img class="product-img" src="images/flatshoes 1.jpg" alt="Classic Round Toe" loading="lazy">
+      <div class="p-4">
+        <h3 class="product-name">Classic Round Toe Flats</h3>
+        <p class="product-type">Flatshoes &middot; Ballet Flats</p>
+        <p class="product-price">Rp949.000</p>
+        <button class="btn-add">Tambah ke Keranjang</button>
+      </div>
+    </article>
+    <article class="product-card" data-category="flatshoes" data-model="Ballet Flats">
+      <img class="product-img" src="images/flatshoes 2.jpg" alt="Square Toe Flats" loading="lazy">
+      <div class="p-4">
+        <h3 class="product-name">Square Toe Flats</h3>
+        <p class="product-type">Flatshoes &middot; Ballet Flats</p>
+        <p class="product-price">Rp949.000</p>
+        <button class="btn-add">Tambah ke Keranjang</button>
+      </div>
+    </article>
+    <article class="product-card" data-category="flatshoes" data-model="Loafers">
+      <img class="product-img" src="images/flatshoes 3.jpg" alt="Classic Loafers" loading="lazy">
+      <div class="p-4">
+        <h3 class="product-name">Classic Loafers</h3>
+        <p class="product-type">Flatshoes &middot; Loafers</p>
+        <p class="product-price">Rp900.000</p>
+        <button class="btn-add">Tambah ke Keranjang</button>
+      </div>
+    </article>
+    <article class="product-card" data-category="flatshoes" data-model="Loafers">
+      <img class="product-img" src="images/flatshoes 4.jpg" alt="Loafers Tassel" loading="lazy">
+      <div class="p-4">
+        <h3 class="product-name">Loafers Tassel</h3>
+        <p class="product-type">Flatshoes &middot; Loafers</p>
+        <p class="product-price">Rp900.000</p>
+        <button class="btn-add">Tambah ke Keranjang</button>
+      </div>
+    </article>
+    <article class="product-card" data-category="flatshoes" data-model="Espadrilles">
+      <img class="product-img" src="images/flatshoes 5.jpg" alt="Espadrille Rope Sole" loading="lazy">
+      <div class="p-4">
+        <h3 class="product-name">Espadrille Rope Sole</h3>
+        <p class="product-type">Flatshoes &middot; Espadrilles</p>
+        <p class="product-price">Rp1.100.000</p>
+        <button class="btn-add">Tambah ke Keranjang</button>
+      </div>
+    </article>
+    <article class="product-card" data-category="flatshoes" data-model="Espadrilles">
+      <img class="product-img" src="images/flatshoes 6.jpg" alt="Espadrille Slip-On" loading="lazy">
+      <div class="p-4">
+        <h3 class="product-name">Espadrille Slip-On</h3>
+        <p class="product-type">Flatshoes &middot; Espadrilles</p>
+        <p class="product-price">Rp1.00.000</p>
+        <button class="btn-add">Tambah ke Keranjang</button>
+      </div>
+    </article>
+
+    <article class="product-card" data-category="sneakers" data-model="Running">
+      <img class="product-img" src="images/sneakers 1.jpg" alt="Running Sneakers Airflow" loading="lazy">
+      <div class="p-4">
+        <h3 class="product-name">Running Sneakers Airflow</h3>
+        <p class="product-type">Sneakers &middot; Running</p>
+        <p class="product-price">Rp2.100.000</p>
+        <button class="btn-add">Tambah ke Keranjang</button>
+      </div>
+    </article>
+    <article class="product-card" data-category="sneakers" data-model="Running">
+      <img class="product-img" src="images/sneakers 2.jpg" alt="Running Sneakers LightStep" loading="lazy">
+      <div class="p-4">
+        <h3 class="product-name">Running Sneakers LightStep</h3>
+        <p class="product-type">Sneakers &middot; Running</p>
+        <p class="product-price">Rp2.200.000</p>
+        <button class="btn-add">Tambah ke Keranjang</button>
+      </div>
+    </article>
+    <article class="product-card" data-category="sneakers" data-model="Casual">
+      <img class="product-img" src="images/sneakers 3.jpg" alt="Classic White Sneakers" loading="lazy">
+      <div class="p-4">
+        <h3 class="product-name">Classic White Sneakers</h3>
+        <p class="product-type">Sneakers &middot; Casual</p>
+        <p class="product-price">Rp1.550.000</p>
+        <button class="btn-add">Tambah ke Keranjang</button>
+      </div>
+    </article>
+    <article class="product-card" data-category="sneakers" data-model="Casual">
+      <img class="product-img" src="images/sneakers 4.jpg" alt="Casual Sneakers Leather" loading="lazy">
+      <div class="p-4">
+        <h3 class="product-name">Casual Sneakers Leather</h3>
+        <p class="product-type">Sneakers &middot; Casual</p>
+        <p class="product-price">Rp1.780.000</p>
+        <button class="btn-add">Tambah ke Keranjang</button>
+      </div>
+    </article>
+    <article class="product-card" data-category="sneakers" data-model="High-Top">
+      <img class="product-img" src="images/sneakers 5.jpg" alt="High-Top Sneakers Classic" loading="lazy">
+      <div class="p-4">
+        <h3 class="product-name">High Top Sneakers Classic</h3>
+        <p class="product-type">Sneakers &middot; High-Top</p>
+        <p class="product-price">Rp2.245.000</p>
+        <button class="btn-add">Tambah ke Keranjang</button>
+      </div>
+    </article>
+    <article class="product-card" data-category="sneakers" data-model="High-Top">
+      <img class="product-img" src="images/sneakers 6.jpg" alt="High-Top Sneakers Retro" loading="lazy">
+      <div class="p-4">
+        <h3 class="product-name">High-Top Sneakers Retro</h3>
+        <p class="product-type">Sneakers &middot; High-Top</p>
+        <p class="product-price">Rp2.650.000</p>
+        <button class="btn-add">Tambah ke Keranjang</button>
+      </div>
+    </article>
+
+    <article class="product-card" data-category="boots" data-model="Ankle Boots">
+      <img class="product-img" src="images/boots 1.jpg" alt="Ankle Boots Buckle" loading="lazy">
+      <div class="p-4">
+        <h3 class="product-name">Ankle Boots Buckle</h3>
+        <p class="product-type">Boots &middot; Ankle Boots</p>
+        <p class="product-price">Rp4.500.000</p>
+        <button class="btn-add">Tambah ke Keranjang</button>
+      </div>
+    </article>
+    <article class="product-card" data-category="boots" data-model="Ankle Boots">
+      <img class="product-img" src="images/boots 2.jpg" alt="Ankle Boots Lace Up" loading="lazy">
+      <div class="p-4">
+        <h3 class="product-name">Ankle Boots Lace Up</h3>
+        <p class="product-type">Boots &middot; Ankle Boots</p>
+        <p class="product-price">Rp4.559.000</p>
+        <button class="btn-add">Tambah ke Keranjang</button>
+      </div>
+    </article>
+    <article class="product-card" data-category="boots" data-model="Chelsea Boots">
+      <img class="product-img" src="images/boots 3.jpg" alt="Chelsea Boots Canvas" loading="lazy">
+      <div class="p-4">
+        <h3 class="product-name">Chelsea Boots Canvas</h3>
+        <p class="product-type">Boots &middot; Chelsea Boots</p>
+        <p class="product-price">Rp4.650.000</p>
+        <button class="btn-add">Tambah ke Keranjang</button>
+      </div>
+    </article>
+    <article class="product-card" data-category="boots" data-model="Chelsea Boots">
+      <img class="product-img" src="images/boots 4.jpg" alt="Chelsea Boots Classic Leather" loading="lazy">
+      <div class="p-4">
+        <h3 class="product-name">Chelsea Boots Classic Leather</h3>
+        <p class="product-type">Boots &middot; Chelsea Boots</p>
+        <p class="product-price">Rp4.470.000</p>
+        <button class="btn-add">Tambah ke Keranjang</button>
+      </div>
+    </article>
+    <article class="product-card" data-category="boots" data-model="Combat Boots">
+      <img class="product-img" src="images/boots 5.jpg" alt="Combat Boots Lace Up" loading="lazy">
+      <div class="p-4">
+        <h3 class="product-name">Combat Boots Lace Up</h3>
+        <p class="product-type">Boots &middot; Combat Boots</p>
+        <p class="product-price">Rp5.390.000</p>
+        <button class="btn-add">Tambah ke Keranjang</button>
+      </div>
+    </article>
+    <article class="product-card" data-category="boots" data-model="Combat Boots">
+      <img class="product-img" src="images/boots 6.jpg" alt="Combat Boots Studded" loading="lazy">
+      <div class="p-4">
+        <h3 class="product-name">Combat Boots Studded</h3>
+        <p class="product-type">Boots &middot; Combat Boots</p>
+        <p class="product-price">Rp6.769.000</p>
+        <button class="btn-add">Tambah ke Keranjang</button>
+      </div>
+    </article>
+
+    <article class="product-card" data-category="heels" data-model="Stiletto">
+      <img class="product-img" src="images/heels 1.jpg" alt="Stiletto Heels Classic Black Night" loading="lazy">
+      <div class="p-4">
+        <h3 class="product-name">Stiletto Heels Classic Black Night</h3>
+        <p class="product-type">Heels &middot; Stiletto</p>
+        <p class="product-price">Rp3.550.000</p>
+        <button class="btn-add">Tambah ke Keranjang</button>
+      </div>
+    </article>
+    <article class="product-card" data-category="heels" data-model="Stiletto">
+      <img class="product-img" src="images/heels 2.jpg" alt="Stiletto Heels Pointed Red Wine" loading="lazy">
+      <div class="p-4">
+        <h3 class="product-name">Stiletto Heels Pointed Red Wine</h3>
+        <p class="product-type">Heels &middot; Stiletto</p>
+        <p class="product-price">Rp3.790.000</p>
+        <button class="btn-add">Tambah ke Keranjang</button>
+      </div>
+    </article>
+    <article class="product-card" data-category="heels" data-model="Block Heel">
+      <img class="product-img" src="images/heels 3.jpg" alt="Block Heels White Casual" loading="lazy">
+      <div class="p-4">
+        <h3 class="product-name">Block Heels White Casual</h3>
+        <p class="product-type">Heels &middot; Block Heel</p>
+        <p class="product-price">Rp3.540.000</p>
+        <button class="btn-add">Tambah ke Keranjang</button>
+      </div>
+    </article>
+    <article class="product-card" data-category="heels" data-model="Block Heel">
+      <img class="product-img" src="images/heels 4.jpg" alt="Block Heels Strap" loading="lazy">
+      <div class="p-4">
+        <h3 class="product-name">Block Heels Strap</h3>
+        <p class="product-type">Heels &middot; Block Heel</p>
+        <p class="product-price">Rp2.655.000</p>
+        <button class="btn-add">Tambah ke Keranjang</button>
+      </div>
+    </article>
+    <article class="product-card" data-category="heels" data-model="Wedge Heel">
+      <img class="product-img" src="images/heels 5.jpg" alt="Wedge Heels Espadrille" loading="lazy">
+      <div class="p-4">
+        <h3 class="product-name">Wedge Heels Ankle Strap</h3>
+        <p class="product-type">Heels &middot; Wedge Heel</p>
+        <p class="product-price">Rp3.630.000</p>
+        <button class="btn-add">Tambah ke Keranjang</button>
+      </div>
+    </article>
+    <article class="product-card" data-category="heels" data-model="Wedge Heel">
+      <img class="product-img" src="images/heels 6.jpg" alt="Wedge Heels Slip On" loading="lazy">
+      <div class="p-4">
+        <h3 class="product-name">Wedge Heels Slip On</h3>
+        <p class="product-type">Heels &middot; Wedge Heel</p>
+        <p class="product-price">Rp2.565.000</p>
+        <button class="btn-add">Tambah ke Keranjang</button>
+      </div>
+    </article>
+
+    <article class="product-card" data-category="sandals" data-model="Flat Sandals">
+      <img class="product-img" src="images/sandals 1.jpg" alt="Flip Flop Flat Sandals" loading="lazy">
+      <div class="p-4">
+        <h3 class="product-name">Flip Flop Flat Sandals</h3>
+        <p class="product-type">Sandals &middot; Flat Sandals</p>
+        <p class="product-price">Rp989.000</p>
+        <button class="btn-add">Tambah ke Keranjang</button>
+      </div>
+    </article>
+    <article class="product-card" data-category="sandals" data-model="Flat Sandals">
+      <img class="product-img" src="images/sandals 2.jpg" alt="T-Strap Sandals" loading="lazy">
+      <div class="p-4">
+        <h3 class="product-name">T-Strap Flat Sandals</h3>
+        <p class="product-type">Sandals &middot; Flat Sandals</p>
+        <p class="product-price">Rp999.000</p>
+        <button class="btn-add">Tambah ke Keranjang</button>
+      </div>
+    </article>
+    <article class="product-card" data-category="sandals" data-model="Strappy Sandals">
+      <img class="product-img" src="images/sandals 3.jpg" alt="Strapp Sandals Classic" loading="lazy">
+      <div class="p-4">
+        <h3 class="product-name">Strapp Sandals Classic</h3>
+        <p class="product-type">Sandals &middot; Strappy Sandals</p>
+        <p class="product-price">Rp880.000</p>
+        <button class="btn-add">Tambah ke Keranjang</button>
+      </div>
+    </article>
+    <article class="product-card" data-category="sandals" data-model="Strappy Sandals">
+      <img class="product-img" src="images/sandals 4.jpg" alt="Strapp Sandals Ankle Strap" loading="lazy">
+      <div class="p-4">
+        <h3 class="product-name">Strapp Sandals Ankle Strap</h3>
+        <p class="product-type">Sandals &middot; Strappy Sandals</p>
+        <p class="product-price">Rp890.000</p>
+        <button class="btn-add">Tambah ke Keranjang</button>
+      </div>
+    </article>
+    <article class="product-card" data-category="sandals" data-model="Wedge Sandals">
+      <img class="product-img" src="images/sandals 5.jpg" alt="Wedge Sandals Platform" loading="lazy">
+      <div class="p-4">
+        <h3 class="product-name">Wedge Sandals Platform</h3>
+        <p class="product-type">Sandals &middot; Wedge Sandals</p>
+        <p class="product-price">Rp999.000</p>
+        <button class="btn-add">Tambah ke Keranjang</button>
+      </div>
+    </article>
+    <article class="product-card" data-category="sandals" data-model="Wedge Sandals">
+      <img class="product-img" src="images/sandals 6.jpg" alt="Wedge Sandals Ankle Strap Brown" loading="lazy">
+      <div class="p-4">
+        <h3 class="product-name">Wedge Sandals Ankle Strap Brown</h3>
+        <p class="product-type">Sandals &middot; Wedge Sandals</p>
+        <p class="product-price">Rp970.000</p>
+        <button class="btn-add">Tambah ke Keranjang</button>
+      </div>
+    </article>
+
+  </div>
+
+  <p id="empty-state" class="hidden text-center text-gray-500 mt-10">Tidak ada produk untuk filter ini.</p>
+</main>
+
+<section id="tentang" class="bg-gray-100 py-10 sm:py-14">
+  <div class="max-w-3xl mx-auto px-4 text-center">
+    <h2 class="heading-section font-bold text-teal-700 mb-3">Tentang Kami</h2>
+    <p class="body-responsive text-gray-600">
+      Menyajikan sepatu wanita lintas gaya mulai dari flatshoes santai, sneakers aktif,
+      boots tegas, heels formal, sampai sandals ringan, semua dengan kualitas terjaga.
+    </p>
+  </div>
+</section>
+
+<footer id="kontak" class="bg-teal-800 text-teal-100">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 grid grid-cols-1 sm:grid-cols-3 gap-8">
+    <div>
+      <h3 class="font-bold text-white mb-2">Shoes.co</h3>
+      <p class="text-sm">Koleksi sepatu wanita lintas gaya, nyaman &amp; stylish.</p>
+    </div>
+    <div>
+      <h3 class="font-bold text-white mb-2">Kontak</h3>
+      <p class="text-sm">Email: Larcel.co.id</p>
+      <p class="text-sm">WhatsApp: 0822-2347-6642</p>
+    </div>
+    <div>
+      <h3 class="font-bold text-white mb-2">Follow Us</h3>
+      <p class="text-sm">Instagram · TikTok · Shopee</p>
+    </div>
+  </div>
+  <div class="border-t border-teal-700 text-center text-xs py-4">
+    &copy; since 2007
+  </div>
+</footer>
+
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+    mobileMenu.classList.toggle('flex');
+    menuToggle.classList.toggle('open');
+  });
+  document.querySelectorAll('#mobile-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+      mobileMenu.classList.remove('flex');
+      menuToggle.classList.remove('open');
+    });
+  });
+
+  const modelsByCategory = {
+    flatshoes: ['Ballet Flats', 'Loafers', 'Espadrilles'],
+    sneakers: ['Running', 'Casual', 'High-Top'],
+    boots: ['Ankle Boots', 'Chelsea Boots', 'Combat Boots'],
+    heels: ['Stiletto', 'Block Heel', 'Wedge Heel'],
+    sandals: ['Flat Sandals', 'Strappy Sandals', 'Wedge Sandals']
+  };
+
+  const catButtons = document.querySelectorAll('.cat-btn');
+  const modelRow = document.getElementById('model-row');
+  const cards = document.querySelectorAll('.product-card');
+  const emptyState = document.getElementById('empty-state');
+
+  let activeCategory = 'semua';
+  let activeModel = null;
+
+  function renderModelRow() {
+    modelRow.innerHTML = '';
+    if (activeCategory === 'semua') return;
+
+    const models = modelsByCategory[activeCategory] || [];
+    const allBtn = document.createElement('button');
+    allBtn.className = 'model-tag active';
+    allBtn.textContent = 'All';
+    allBtn.dataset.model = '';
+    modelRow.appendChild(allBtn);
+
+    models.forEach(model => {
+      const btn = document.createElement('button');
+      btn.className = 'model-tag';
+      btn.textContent = model;
+      btn.dataset.model = model;
+      modelRow.appendChild(btn);
+    });
+
+    modelRow.querySelectorAll('.model-tag').forEach(btn => {
+      btn.addEventListener('click', () => {
+        modelRow.querySelectorAll('.model-tag').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        activeModel = btn.dataset.model || null;
+        filterCards();
+      });
+    });
+  }
+
+  function filterCards() {
+    let visibleCount = 0;
+    cards.forEach(card => {
+      const matchCategory = activeCategory === 'semua' || card.dataset.category === activeCategory;
+      const matchModel = !activeModel || card.dataset.model === activeModel;
+      const show = matchCategory && matchModel;
+      card.classList.toggle('hidden', !show);
+      if (show) visibleCount++;
+    });
+    emptyState.classList.toggle('hidden', visibleCount !== 0);
+  }
+
+  catButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      catButtons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      activeCategory = btn.dataset.cat;
+      activeModel = null;
+      renderModelRow();
+      filterCards();
+    });
+  });
+
+  renderModelRow();
+  filterCards();
+</script>
+
+</body>
+</html>
